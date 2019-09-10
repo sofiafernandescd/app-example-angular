@@ -11,6 +11,8 @@ export class FormSearchComponent implements OnInit {
   public result: string;
   @Input()
   labelButton: string;
+  @Input()
+  placeholder: string;
   @Output()
   searchEvent = new EventEmitter();
   
@@ -20,6 +22,8 @@ export class FormSearchComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.labelButton = this.labelButton ? this.labelButton : 'Find!';
+    this.placeholder = this.placeholder ? this.placeholder : 'Escreva a sua query';
   }
 
   

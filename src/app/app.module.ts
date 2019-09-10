@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, EventEmitter } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,9 +17,7 @@ import { FormSearchComponent } from './form-search/form-search.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    EventEmitter
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
