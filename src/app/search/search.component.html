@@ -1,9 +1,11 @@
 <h1>Buscador</h1>
 <form>
-    Query: <input type="text" name="query" placeholder="Query a executar" [(ngModel)]="query" />
-    <input type="submit" value="Buscar" (click)="searchQuery()" />
+    Query: <input type="text" name="query" [placeholder]="placeholder" [(ngModel)]="queryText" class="form-control mr-sm-2" />
+    <input type="button" value="{{labelButton}}" (click)="search($event)" class="btn btn-outline-primary my-2 my-sm-0 btnSubmit"/>
     <br><br>
     <p>Parametro de busca: {{query}}</p>
     <p>Resultado: {{result}}</p>
 </form>
 <p>search works!</p>
+
+

@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  public title: string;
+  public query: string;
+  
   public msgEventSearch: string;
-  title = 'app-oiiii';
   constructor() {
     setTimeout(
       ()=>{this.title='Hello World';}, 2000);
@@ -15,6 +18,11 @@ export class AppComponent {
   searchMsg(event) {
     this.msgEventSearch = event.query+' => '+event.resultado;
   }
+
+  search(event): void {
+    this.query=event.query;
+  }
+
 }
 
 

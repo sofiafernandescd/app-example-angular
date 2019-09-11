@@ -1,1 +1,8 @@
-<p>form-search works!</p>
+<h1>Buscador</h1>
+<form>
+    Query: <input type="text" name="query" placeholder="Query a executar" [(ngModel)]="query" />
+    <input type="submit" value="Buscar" (click)="search()" />
+    <br><br>
+    <p>Parametro de busca: {{query}}</p>
+    <p>Resultado: {{result}}</p>
+</form>

@@ -1,0 +1,9 @@
+
+<div *ngIf="owners && owners.length > 0">
+    <h3>Owners:</h3>
+    <ul>
+      <li *ngFor="let owner of owners">
+        {{owner.firstName}} {{owner.lastName}} - {{owner.city}}
+      </li>
+    </ul>
+  </div>
